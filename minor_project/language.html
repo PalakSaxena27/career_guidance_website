@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Website Layout | CodingLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="language .html">
+    <link rel="stylesheet" href="lag.css">
+
+
+
+
+
+    <style>
+        .rocks {
+            font-family: 'Arial', sans-serif;
+            background-color: fff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        
+
+
+        .nav2 {
+
+            display: flex;
+            justify-content: center;
+            background-color: #c9b4b4;
+            padding: 10px;
+            background: #ccc5c5;
+        }
+
+        .nav2 a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            margin: 0 10px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            
+        }
+
+        section {
+            background-color: #f5f5f5;
+            padding: 30px;
+            margin: 20px;
+            height: auto;
+        }
+
+        #home {
+            display: block;
+        }
+
+        header {
+            background-color: rgb(102, 0, 128);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #34024b;
+        }
+
+
+
+        ul {
+
+            padding-left: 20px;
+            list-style-type: decimal;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #e6d7d7;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ol {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+       
+@media only screen and (max-width: 768px) {
+    .nav2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav2 a {
+        margin: 5px 0;
+        padding-top: 60px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+        
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">Compute_Point</a>
+            </div>
+            <ul>
+                <li><a href="demo.html">Home</a></li>
+                <li><a href="about .html">About</a></li>
+                <li><a href="fresher.html">fresher</a></li>
+                <li><a href="rgpc.html">Exam</a></li>
+                
+        
+            </ul>
+        </div>
+    </nav>
+    </div>
+    
+    <header>
+
+    </header>
+<div class="maja">
+    
+    <div class="nav2">
+        <a onclick="showPage('c')">c</a>
+        <a onclick="showPage('c++')">c++</a>
+        <a onclick="showPage('java')">java</a>
+        <a onclick="showPage('python')">python</a>
+        <a onclick="showPage('javascript')">javascript</a>
+        
+    </div>
+    <section id="c">
+        <h1>Learn C Programming</h1>
+
+        <ol>
+            <li><strong>Set Up Your Development Environment:</strong>
+                <ul>
+                    <li>Compiler: Install a C compiler on your system. Popular choices include GCC (GNU Compiler
+                        Collection), Microsoft Visual C++, and Clang.</li>
+                    <li>IDE (Integrated Development Environment): Optionally, you can use an IDE for a more
+                        user-friendly experience. Examples include Code::Blocks, Dev-C++, or Visual Studio.</li>
+                </ul>
+            </li>
+
+            <li><strong>Learn the Basics:</strong>
+                <ul>
+                    <li>Variables and Data Types: Understand the different data types in C, such as int, float, char,
+                        etc.</li>
+                    <li>Operators: Learn about arithmetic, relational, logical, and bitwise operators.</li>
+                    <li>Control Flow: Understand how to use if statements, switch statements, and loops (for, while,
+                        do-while).</li>
+                </ul>
+            </li>
+
+            <li><strong>Functions and Modular Programming:</strong>
+                <ul>
+                    <li>Functions: Learn how to define and use functions.</li>
+                    <li>Scope: Understand the scope of variables (local and global).</li>
+                    <li>Header Files: Learn how to use header files for function declarations.</li>
+                </ul>
+            </li>
+
+            <li><strong>4. Arrays and Strings</strong></li>
+            <ul>
+                <li>Arrays: Understand how to work with one-dimensional and multi-dimensional arrays.</li>
+                <li>Strings: Learn about C-style strings and how to manipulate them.</li>
+            </ul>
+            <li><strong> Pointers and Memory Management</strong></li>
+            <ul>
+                <li>Pointers: Understand the concept of pointers and how to use them.</li>
+                <li>Dynamic Memory Allocation: Learn about functions like malloc and free for dynamic memory allocation.
+                </li>
+            </ul>
+
+            <li><strong> Structs and Unions</strong></li>
+            <ul>
+                <li>Structures: Understand how to define and use structures.</li>
+                <li>Unions: Learn about unions and their usage.</li>
+            </ul>
+            <li><strong>File Handling</strong></li>
+            <ul>
+                <li>File I/O: Learn how to read from and write to files using functions like fopen, fclose, fread, and
+                    fwrite.</li>
+            </ul>
+
+<strong><li>Advanced Topics (Optional)</li></strong>
+<ul><li>Bit Manipulation: Explore bitwise operations for efficient programming.</li>
+<li>Function Pointers: Understand how to use function pointers for more advanced programming.</li></ul>
+ <strong><li> Practice, Practice, Practice</li></strong>
+ <ul><li>Coding Challenges: Solve programming exercises and challenges on platforms like HackerRank, LeetCode, or CodeSignal.</li>
+<li>Build Projects: Apply your knowledge by working on small projects.</li></ul>
+<strong><li>Refer to Documentation and Books</li></strong>
+<ul><li>Read Documentation: Refer to the official C documentation for in-depth information.</li>
+<li>Books: Consider reading classic C programming books like "C Programming Absolute Beginner's Guide" by Perry and Miller or "C Programming for the Absolute Beginner" by Vine.</li></ul>
+<strong><li>Join Programming Communities:</li></strong>
+<ul><li>Forums and Communities: Join online communities like Stack Overflow to ask questions and learn from experienced developers.</li>
+<li>GitHub: Explore open-source C projects on GitHub to see how experienced programmers structure their code.</li></ul>
+
+        </ol>
+        <h2 style="color: darkgoldenrod;"> If you have more interst, follow this website and
+            youtube channel for free knowledge</h2><br><br>
+        <h3 style="color: aqua;">Websites</h3><br><br>
+        <strong>geekforgeek </strong><br><br>
+        <strong>cpp tutorials points</strong><br><br>
+        <strong>programiz</strong><br><br>
+        <strong>W3school</strong><br><br>
+        <h3 style="color: aqua;">Youtube channel</h3><br><br>
+        <strong>simple snnipets</strong><br><br>
+        <strong>love babber</strong><br><br>
+        <strong>apna college</strong><br><br>
+
+        </p><br><br>
+        <h1>C++ Learning Topics</h1>
+
+        <div class="topics-list">
+            <h2>Introduction to C++</h2>
+            <ul>
+                <li>History and Overview</li>
+                <li>Compilers and IDEs</li>
+                <li>Structure of a C++ Program</li>
+            </ul>
+
+            <h2>Basic Syntax</h2>
+            <ul>
+                <li>Variables and Data Types</li>
+                <li>Operators</li>
+                <li>Control Flow (if, else, switch)</li>
+                <li>Loops (for, while, do-while)</li>
+            </ul>
+            <ul>
+                <h2>Functions</h2>
+                <li>Function Declaration and Definition</li>
+                <li>Parameters and Return Types</li>
+                <li>Function Overloading</li>
+                <li>Recursion</li>
+            </ul>
+
+
+    </section>
+
+    <section id="c++">
+        <strong><li>Learning C++</li></strong><br><br><br>
+        <p> 1. C++ is a cross-platform language that can be used to create high-performance applications.
+            <br><br>
+
+            2. C++ was developed by Bjarne Stroustrup, as an extension to the C language. <br><br>
+
+            3. C++ gives programmers a high level of control over system resources and memory. <br><br>
+
+            4. The language was updated 4 major times in 2011, 2014, 2017, and 2020 to C++11, C++14, C++17,
+            C++20.
+        </p><br><br>
+
+        <br><strong>Why Use C++</strong><br><br>
+        <p>
+            1. C++ is one of the world's most popular programming languages. <br><br>
+
+            2. C++ can be found in today's operating systems, Graphical User Interfaces, and embedded
+            systems. <br><br>
+
+            3. C++ is an object-oriented programming language which gives a clear structure to programs and
+            allows <br>
+            code to be reused, lowering development costs. <br><br>
+
+            4. C++ is portable and can be used to develop applications that can be adapted to multiple
+            platforms. <br>
+
+            C++ is fun and easy to learn! <br><br>
+
+            5. As C++ is close to C, C# and Java, it makes it easy for programmers to switch to C++ or vice
+            versa. <br><br>
+        </p>
+        <br><br><strong>Difference between C and C++</strong> <br><br>
+
+        <p> 1. C++ was developed as an extension of C, and both languages have almost the same syntax.
+            <br><br>
+
+            2.The main difference between C and C++ is that C++ support classes and objects, while C does
+            not.
+
+        </p><br><br>
+        <strong>C++ Get Started</strong> <br><br>
+        <p>To start using C++, you need two things: <br><br>
+
+            A text editor, like Notepad, to write C++ code <br><br>
+            A compiler, like GCC, to translate the C++ code into a language that the computer will
+            understand <br><br>
+            There are many text editors and compilers to choose from. In this tutorial, we will use an IDE
+            (see below). <br> <br><br>
+
+
+
+            <strong>C++ Quickstart</strong><br><br>
+
+            Let's create our first C++ file. <br><br>
+
+            Open Codeblocks and go to File > New > Empty File. <br><br>
+
+            Write the following C++ code and save the file as myfirstprogram.cpp (File > Save File as):
+            <br><br>
+
+
+
+        <h2 style="color: darkgoldenrod;"> If you have more interst, follow this website and
+            youtube channel for free knowledge</h2><br><br>
+        <h3 style="color: aqua;">Websites</h3><br><br>
+        <strong>geekforgeek </strong><br><br>
+        <strong>cpp tutorials points</strong><br><br>
+        <strong>programiz</strong><br><br>
+        <strong>W3school</strong><br><br>
+        <h3 style="color: aqua;">Youtube channel</h3><br><br>
+        <strong>simple snnipets</strong><br><br>
+        <strong>love babber</strong><br><br>
+        <strong>apna college</strong><br><br>
+
+        </p><br><br>
+        <h1>C++ Learning Topics</h1>
+
+        <div class="topics-list">
+            <h2>Introduction to C++</h2>
+            <ul>
+                <li>History and Overview</li>
+                <li>Compilers and IDEs</li>
+                <li>Structure of a C++ Program</li>
+            </ul>
+
+            <h2>Basic Syntax</h2>
+            <ul>
+                <li>Variables and Data Types</li>
+                <li>Operators</li>
+                <li>Control Flow (if, else, switch)</li>
+                <li>Loops (for, while, do-while)</li>
+            </ul>
+            <ul>
+                <h2>Functions</h2>
+                <li>Function Declaration and Definition</li>
+                <li>Parameters and Return Types</li>
+                <li>Function Overloading</li>
+                <li>Recursion</li>
+            </ul>
+
+
+    </section>
+
+    <section id="java">
+       <strong>Learning java</strong><br>
+       <p>
+        <strong><h1>What is Java?</h1></strong>
+        <br/>
+        Java is a versatile, object-oriented, and platform-independent programming language. It was developed by Sun Microsystems (acquired by Oracle Corporation) and released in 1995. Java is designed to be robust, secure, and easy to use. It follows the principle of "Write Once, Run Anywhere" (WORA), meaning that Java code can run on any device or platform with a Java Virtual Machine (JVM).
+        <br/><br/>
+
+        <strong><h1>Key Features of Java</h1></strong>
+        <br/>
+
+    </p>
+    <strong>JAVA</strong><br><br><br>
+                    <p>Java is a popular programming language, created in 1995. It is owned by Oracle, <br>
+                        and more than 3 billion devices run Java.</p><br><br>
+
+                    <strong>It is use for </strong><br><br>
+                    <ul>
+                        <li>Mobile applications (specially Android apps)</li><br>
+                        <li>Desktop applications</li><br>
+                        <li>Web applications</li><br>
+                        <li>Web servers and application servers</li><br>
+                        <li>Games</li><br>
+                        <li>Database connection</li><br>
+                        <li>And much, much more!</li><br><br>
+                    </ul>
+
+                    <strong>Why java? </strong><br><br>
+                    <ul>
+                        <li>Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li><br>
+                        <li>It is one of the most popular programming languages in the world</li><br>
+                        <li>It has a large demand in the current job market</li><br>
+                        <li>It is easy to learn and simple to use</li><br>
+                        <li>It is open-source and free</li><br>
+                        <li>It is secure, fast, and powerful</li><br>
+                        <li>It has a huge community support (tens of millions of developers)</li><br>
+                        <li>Java is an object-oriented language which gives a clear structure to <br>
+                            programs and allows code to be reused, lowering development costs.</li><br>
+                        <li>As Java is close to C++ and C#, it makes it easy for programmers to switch <br>
+                            to Java or vice versa</li><br><br><br>
+                        <h2 style="color: darkgoldenrod;"> If you have more interst, follow this website and
+                            youtube channel for free knowledge</h2><br><br>
+                        <h3 style="color: aqua;">Websites</h3><br><br>
+                        <strong>geekforgeek </strong><br><br>
+                        <strong>cpp tutorials points</strong><br><br>
+                        <strong>programiz</strong><br><br>
+                        <strong>W3school</strong><br><br>
+                        <h3 style="color: aqua;">Youtube channel</h3><br><br>
+                        <strong>simple snnipets</strong><br><br>
+                        <strong>love babber</strong><br><br>
+                        <strong>apna college</strong><br><br>
+
+                    </ul>
+       
+	
+		
+    </section>
+    <section id="python">
+        <div class="python"> <strong>PYTHONE</strong><br><br><br>
+
+            <p>Python is a popular programming language. It was created by Guido van Rossum, and released in
+                1991.</p><br>
+
+            <strong>It is use for </strong><br><br>
+            <ul>
+                <li>Web development (server-side)</li><br>
+                <li>Software development</li><br>
+                <li>Mathematics</li><br>
+                <li>System scripting</li><br>
+            </ul>
+
+         <strong>What can pythone do </strong><br><br>
+
+            <ul>
+                <li>Python can be used on a server to create web applications.</li><br>
+                <li>Python can be used alongside software to create workflows.</li><br>
+                <li>Python can connect to database systems. It can also read and modify files.</li><br>
+                <li>Python can be used to handle big data and perform complex mathematics.</li><br>
+                <li>Python can be used for rapid prototyping, or for production-ready software <br>
+                    development.</li><br><br>
+            </ul>
+
+           <strong>Why pythone</strong><br><br>
+            <ul>
+                <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li><br>
+                <li>Python has a simple syntax similar to the English language.</li><br>
+                <li>Python has syntax that allows developers to write programs with fewer lines than <br>some other
+                    programming languages.</li><br>
+                <li>Python runs on an interpreter system, meaning that code can be executed as soon as <br> it is
+                    written. This means that prototyping can be very quick.</li><br>
+                <li>Python can be treated in a procedural way, an object-oriented way, or a functional way.</li>
+            </ul><br><br>
+
+           <strong>Good to know</strong><br><br>
+            <p>The most recent major version of Python is Python 3, which we shall be using in <br>
+                this tutorial.
+                However, Python 2,<br>
+                although not being updated with anything other than security updates, is still <br>
+                quite popular. <br>
+            </p>
+
+            <p>In this tutorial, Python will be written in a text editor. It is possible to write Python in an
+                Integrated
+                Development Environment, such as Thonny, Pycharm, Netbeans, or Eclipse which are particularly
+                useful when
+                managing larger collections of Python files.</p>
+
+            <h1>Python Syntax compared to other programming languages</h1>
+            <p>Python was designed for readability, and has some similarities to the English language with
+                influence from
+                mathematics.</p>
+
+            <p>Python uses new lines to complete a command, as opposed to other programming languages which
+                often use semicolons
+                or parentheses.</p>
+
+            <p>Python relies on indentation, using whitespace, to define scope; such as the scope of loops,
+                functions, and
+                classes. Other programming languages often use curly-brackets for this purpose.</p>
+            <p></p></div>
+    </section>
+    <section id="javascript">
+     <strong><h1>Learn with javascript</h1></strong><br>
+JavaScript is a high-level, versatile, and interpreted programming language primarily used for creating dynamic and interactive content on websites. It is one of the core technologies of the web, along with HTML and CSS. JavaScript allows developers to build client-side applications that run in a user's web browser, enhancing the user experience by enabling features like form validation, dynamic content updates, and interactive elements.
+    
+<strong><h1>Where is JavaScript Used?</h1></strong><br><br>
+<strong>Web Development</strong>
+<ul><li>Client-Side Scripting: JavaScript is primarily used for client-side scripting, allowing developers to create interactive and dynamic user interfaces.</li>
+<li>Frameworks and Libraries: Numerous frameworks and libraries (e.g., React, Angular, Vue.js) built on JavaScript facilitate the development of complex and scalable web applications.</li></ul>
+<strong>Server-Side Development</strong><br><br>
+<ul><li>With the advent of technologies like Node.js, JavaScript can also be used for server-side development, allowing developers to use the same language on both the client and server.</li></ul>
+<strong>Mobile App Development:</strong>
+<ul><li>JavaScript, along with frameworks like React Native or frameworks like Ionic, is used for building cross-platform mobile applications.</li></ul>
+<strong>Game Development</strong>
+<ul><li>JavaScript is increasingly being used for game development, either directly or through game development frameworks and engines.</li></ul>
+<strong>Desktop Application Development</strong>
+<ul><li>Frameworks like Electron enable the creation of desktop applications using web technologies, including JavaScript.</li></ul><br><br>
+<h1>How to Learn JavaScript</h1><br><br>
+<strong>Online Courses and Tutorials</strong>
+<ul><li>Platforms like Codecademy, freeCodeCamp, Udacity, and others offer comprehensive JavaScript courses for beginners and advanced learners.</li></ul>
+<strong>Documentation and Guides</strong>
+<ul><li>The official Mozilla Developer Network (MDN) JavaScript Guide is an excellent resource for learning JavaScript.</li></ul>
+<strong>Books</strong>
+<ul><li>Recommended books include "Eloquent JavaScript" by Marijn Haverbeke and "You Don't Know JS" by Kyle Simpson.</li></ul>
+<strong>Interactive Coding Practice</strong>
+<ul><li>Use coding platforms like HackerRank, LeetCode, or CodeSignal to practice JavaScript coding exercises.</li></ul>
+<strong>Online Coding Challenges</strong>
+<ul><li>Participate in coding challenges on platforms like Codewars or Exercism to improve problem-solving skills.</li></ul>
+<strong>Projects and Real-World Applications</strong>
+<ul><li>Build small projects and gradually work on larger applications to apply your knowledge and gain practical experience.</li></ul>
+
+</section>
+</div>
+  <script>
+        function showPage(pageId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function (section) {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
+
+</body>
+
+</html>
+
+</body>
+
+</html>

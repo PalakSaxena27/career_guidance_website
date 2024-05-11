@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Website Layout | CodingLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="language .html">
+    <link rel="stylesheet" href="lag.css">
+
+
+
+
+
+    <style>
+        
+
+        
+        .project{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            padding: 10%;
+            background: rgb(138, 243, 208);;
+        }
+        
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #053a06;
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            color: rgb(241, 223, 142);
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        /* Media query for responsiveness */
+@media only screen and (max-width: 768px) {
+    .project {
+        flex-direction: column; /* Stack boxes vertically on smaller screens */
+        align-items: center;
+    }
+
+    .box {
+        width: 100%; /* Full width for each box on smaller screens */
+    }
+}
+    </style>
+   
+
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">Compute_Point</a>
+            </div>
+            <ul>
+                <li><a href="demo.html">Home</a></li>
+        <li><a href="about .html">About</a></li>
+        <li><a href="fresher.html">fresher</a></li>
+        <li><a href="rgpc.html">Exam</a></li>
+        
+              
+            </ul>
+        </div>
+    </nav>
+
+
+    </div>
+
+        
+
+     <div class="project">
+    <a href="page1.html" class="box">
+        <span>Computer Science and Engineering</span>
+    </a>
+
+    <a href="page2.html" class="box">
+        <span>
+            Artificial intelligence</span>
+    </a>
+
+    <a href="page3.html" class="box">
+        <span>Data science</span>
+    </a>
+
+    <a href="page4.html" class="box">
+        <span>Information and technology</span>
+    </a>
+
+    
+</div>
+<div class="footer">
+    <div class="footer-item">
+        <h3>Contact Us</h3>
+        <br>
+        <p>careercrafter101@gmail.com</p>
+
+        <p>Phone: 9302720446</p>
+    </div>
+    <div class="footer-item">
+        <h3>Follow Us</h3>
+        <br>
+        <p>Instagram Id :- </p>
+        <p>Career_Crafter101</p>
+    </div>
+    <div class="footer-item">
+        <h3>Website Info </h3><br>
+        <p>Link :- </p>
+        <p>www.careercrafter.com </p>
+        <p>Follow for more information.</p>
+
+    </div>
+</div>
+ <!-- Repeat the pattern for boxes 3-6 -->
+ <script>
+     document.querySelectorAll('.expandable-box').forEach(box => {
+         box.addEventListener('click', () => {
+             box.classList.toggle('expanded');
+
+             // Close other expanded boxes
+             document.querySelectorAll('.expandable-box.expanded')
+                 .forEach(otherBox => {
+                     if (otherBox !== box) {
+                         otherBox.classList.remove('expanded');
+                     }
+                 });
+         });
+     });</script>
+</body>
+
+</html>
+
+</body>
+</html>

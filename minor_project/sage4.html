@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Website Layout | CodingLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="language .html">
+    <link rel="stylesheet" href="lag.css">
+    <link rel="stylesheet" href="fake.css">
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">Compute_Point</a>
+            </div>
+            <ul>
+                <li><a href="demo.html">Home</a></li>
+                <li><a href="about .html">About</a></li>
+                <li><a href="fresher.html">fresher</a></li>
+                <li><a href="rgpc.html">Exam</a></li>
+                
+
+            </ul>
+        </div>
+    </nav>
+    <div class="page1">
+        <div class="baap">
+            <div class="content-container">
+                <div class="content">
+                    <h1>Backend Developer Roadmap</h1>
+
+                    <h2>1. Learn the Basics:</h2>
+                    <ul>
+                        <li>Choose a Programming Language:</li>
+                        <ul>
+                            <li>JavaScript (Node.js)</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>Ruby</li>
+                            <li>C#</li>
+                        </ul>
+                        <li>Understand Basic Data Structures and Algorithms</li>
+                        <li>Learn to Use Version Control (Git)</li>
+                        <li>Understand HTTP/HTTPS and RESTful APIs</li>
+                    </ul>
+                
+                    <h2>2. Databases:</h2>
+                    <ul>
+                        <li>Relational Databases:</li>
+                        <ul>
+                            <li>Learn SQL</li>
+                            <li>Choose a Database (e.g., MySQL, PostgreSQL)</li>
+                            <li>ORM (Object-Relational Mapping) - Optional</li>
+                        </ul>
+                        <li>NoSQL Databases:</li>
+                        <ul>
+                            <li>Learn about MongoDB, Firebase, or others</li>
+                        </ul>
+                    </ul>
+                
+                    <h2>3. Server-Side Frameworks:</h2>
+                    <ul>
+                        <li>Node.js (Express.js)</li>
+                        <li>Python (Django, Flask)</li>
+                        <li>Java (Spring Boot)</li>
+                        <li>Ruby (Ruby on Rails)</li>
+                        <li>C# (ASP.NET)</li>
+                    </ul>
+                
+                    <h2>4. API Development:</h2>
+                    <ul>
+                        <li>Create RESTful APIs</li>
+                        <li>Authentication and Authorization</li>
+                        <li>GraphQL - Optional</li>
+                    </ul>
+                
+                    <h2>5. Learn about Caching:</h2>
+                    <ul>
+                        <li>Understand caching strategies</li>
+                        <li>Use caching tools like Redis or Memcached</li>
+                    </ul>
+                
+                    <h2>6. Message Brokers:</h2>
+                    <ul>
+                        <li>Learn about message queues (e.g., RabbitMQ, Kafka)</li>
+                    </ul>
+                
+                    <h2>7. Containerization and Orchestration:</h2>
+                    <ul>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                    </ul>
+                
+                    <h2>8. Testing:</h2>
+                    <ul>
+                        <li>Unit Testing</li>
+                        <li>Integration Testing</li>
+                        <li>End-to-End Testing</li>
+                    </ul>
+                
+                    <h2>9. Learn about Web Servers:</h2>
+                    <ul>
+                        <li>Nginx</li>
+                        <li>Apache</li>
+                    </ul>
+                
+                    <h2>10. Security:</h2>
+                    <ul>
+                        <li>Understand common security threats</li>
+                        <li>Implement secure coding practices</li>
+                        <li>Learn about HTTPS and SSL certificates</li>
+                    </ul>
+                
+                    <h2>11. GraphQL - Optional:</h2>
+                    <ul>
+                        <li>Learn GraphQL for API development</li>
+                    </ul>
+                
+                    <h2>12. Continuous Integration/Continuous Deployment (CI/CD):</h2>
+                    <ul>
+                        <li>Learn CI/CD tools (e.g., Jenkins, GitLab CI, Travis CI)</li>
+                    </ul>
+                
+                    <h2>13. Cloud Services:</h2>
+                    <ul>
+                        <li>Understand cloud platforms (e.g., AWS, Azure, Google Cloud)</li>
+                        <li>Deploy applications to the cloud</li>
+                    </ul>
+                
+                    <h2>14. Keep Learning:</h2>
+                    <ul>
+                        <li>Stay updated with industry trends</li>
+                        <li>Explore advanced topics based on your interests</li>
+                    </ul>
+                
+                    <h2>15. Build a Portfolio:</h2>
+                    <ul>
+                        <li>Showcase your projects on GitHub or other platforms</li>
+                        <li>Include a variety of projects to demonstrate different skills</li>
+                    </ul>
+                
+                    <h2>16. Networking and Community:</h2>
+                    <ul>
+                        <li>Join developer forums and communities</li>
+                        <li>Participate in meetups and conferences</li>
+                    </ul>
+                </div>
+                
+            </div>
+           
+        
+    </div>
+    
+    <!-- Repeat the pattern for boxes 3-6 -->
+    <script>
+        document.querySelectorAll('.expandable-box').forEach(box => {
+            box.addEventListener('click', () => {
+                box.classList.toggle('expanded');
+
+                // Close other expanded boxes
+                document.querySelectorAll('.expandable-box.expanded')
+                    .forEach(otherBox => {
+                        if (otherBox !== box) {
+                            otherBox.classList.remove('expanded');
+                        }
+                    });
+            });
+        });</script>
+</body>
+
+</html>
+
+</body>
+
+</html>

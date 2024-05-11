@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Website Layout | CodingLab</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="language .html">
+  <link rel="stylesheet" href="lag.css">
+  <link rel="stylesheet" href="skill.html">
+</head>
+<style>/* h1, h2, h3 {
+  color: rgb(245, 214, 171);
+}*/
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+h2 {
+  
+  padding-bottom: 5px;
+  margin-top: 20px;
+}</style>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">Computer-scinece</a>
+      </div>
+      <ul>
+        <li><a href="demo.html">Home</a></li>
+        <li><a href="about .html">About</a></li>
+        <li><a href="fresher.html">fresher</a></li>
+        <li><a href="rgpc.html">Exam</a></li>
+        
+
+      </ul>
+    </div>
+  </nav>
+    <div id="sidebar">
+      <br><a href="#" onclick="closeNav()">close</a>
+      <a href="branch.html">Branches</a>
+      <a href="skill.html">tech skill</a>
+      <a href="contest.html">Contest</a>
+      <a href="intership.html">insterships</a>
+      <a href="ex.html">Exam</a>
+      
+
+  </div>
+
+  <div id="main-content">
+      <button id="openBtn" onclick="openNav()">menu </button>
+      <!-- Your main content goes here -->
+  </div>
+    
+ 
+  
+  <div class="about_container">
+    <div class="about_container1">
+      <span> Welcome to Career_Crafter</span><br><br><br>
+
+    <p>Your comprehensive guide to navigating the vast and dynamic field of Computer <br>
+      Science and Engineering (CSE). Whether you're a student exploring CSE disciplines,<br>
+       languages, career roadmaps, or searching for internship opportunities, we've got you covered.</p><br><br>
+
+    <h2>Explore CSE Branches:</h2><br>
+    <ul>
+        <li>Dive into the diverse branches within CSE, from Software Engineering to Artificial <br>
+          Intelligence, Web Development, Cybersecurity, and beyond. Discover the nuances of each <br>
+           field, explore career paths, and find your passion in the world of technology.</li><br><br>
+    </ul>
+
+    <h2>Learn Essential Languages:</h2><br>
+    <ul>
+        <li>Mastering programming languages is crucial in CSE. Our platform provides resources, <br>
+           tutorials, and insights into popular languages like Java, Python, C++, JavaScript,<br>
+            and more. Elevate your coding skills and stay ahead in the rapidly evolving tech landscape.</li>
+<br><br>    </ul>
+
+    <h2>Build Your Roadmap:</h2><br>
+    <ul>
+        <li>Crafting a successful career in CSE requires strategic planning. Our roadmap guides <br>
+           you through academic choices, skill development, and project work. Whether you're a student <br>
+           starting your journey or a professional seeking to upskill, find the roadmap that aligns with your goals.</li>
+    <br><br></ul>
+
+    <h2>Internship Opportunities:</h2><br>
+    <ul>
+        <li>Real-world experience is invaluable. Explore internship opportunities tailored for CSE <br>
+           students. Gain hands-on experience, apply your knowledge, and build a network in the industry. <br>
+            Our curated list of internships connects you with leading tech companies seeking CSE talent.</li><br><br>
+    </ul>
+
+    <h2>Stay Informed:</h2><br>
+    <ul>
+        <li>Stay updated on the latest trends, technologies, and industry insights. Our curated articles, <br>
+           interviews, and news keep you informed about the ever-evolving landscape of CSE. Knowledge is power, <br>
+            and we're here to empower you with the information you need.</li> <br>
+    </ul>
+
+
+
+      
+
+       
+</div>
+    </div>
+
+    
+    <div class="footer">
+      <div class="footer-item">
+          <h3>Contact Us</h3>
+          <br>
+          <p>careercrafter101@gmail.com</p>
+
+          <p>Phone: 9302720446</p>
+      </div>
+      <div class="footer-item">
+          <h3>Follow Us</h3>
+          <br>
+          <p>Instagram Id :- </p>
+          <p>Career_Crafter101</p>
+      </div>
+      <div class="footer-item">
+          <h3>Website Info </h3><br>
+          <p>Link :- </p>
+          <p>www.careercrafter.com </p>
+          <p>Follow for more information.</p>
+
+      </div>
+  </div>
+</div>
+<script>
+  function openNav() {
+      document.getElementById("sidebar").style.left = "0";
+      document.getElementById("main-content").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+      document.getElementById("sidebar").style.left = "-250px";
+      document.getElementById("main-content").style.marginLeft= "0";
+  }
+</script>
+</body>
+
+</html>

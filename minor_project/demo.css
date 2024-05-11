@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+  color:rgb(4, 71, 4); 
+  background: #6bca63;
+}
+
+nav {
+  position: fixed;
+  background: #014224;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+
+nav .menu {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+@media only screen and (max-width: 768px) {
+  nav .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    color: rgb(241, 213, 171);
+  }
+
+  nav .menu a {
+    margin-bottom: 10px;
+    color: rgb(240, 216, 180);;
+  }
+}
+
+.menu .logo a {
+  text-decoration: none;
+  color: rgb(241, 225, 201);
+  box-shadow: #014224;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.menu ul {
+  display: inline-flex;
+}
+
+.menu ul li {
+  list-style: none;
+  margin-left: 7px;
+}
+
+.menu ul li:first-child {
+  margin-left: 0px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+   color: rgb(250, 227, 192);
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.menu .logo a:hover {
+  
+  color: rgb(144, 247, 140);
+}
+.menu ul li a:hover {
+  background: #078d2f;
+  color: rgb(144, 246, 140);
+}
+
+@media screen and (min-width: 768px) {
+  .menu ul {
+    flex-direction: row; /* Change back to row layout on larger screens */
+  }
+
+  .menu ul li {
+    margin: 0 10px;
+  }
+}
+
+  
+
+
+.container {
+  
+  background:rgb(61, 216, 164);;
+
+  
+ width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+
+  
+}
+
+
+.center {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  height: 300px;
+}
+
+.center .title {
+  color: rgb(241, 225, 201);
+  font-size: 15px;
+  font-weight: 300;
+  font-family: sans-serif;
+}
+
+.center .sub_title {
+  color: rgb(241, 225, 201);
+  font-size: 32px;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .center .title {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  
+
+  .center .sub_title {
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 300px;
+  background: #014224;
+}
+
+.rust{
+  width: 100%;
+  height: 600px;
+  background: #014224;
+
+}
+.container2 {
+  width: 100%;
+  height: auto; /* Adjust the height as needed */
+  min-height: 500px; /* Minimum height to ensure content visibility */
+  background: rgb(61, 216, 164);
+  display: flex;
+  flex-wrap: wrap; /* Enable flex items to wrap to the next line if needed */
+  justify-content: space-around; /* Adjust the spacing between flex items */
+  padding: 20px; /* Add padding to the container */
+}
+
+.box1, .box2, .box3 {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  margin: 10px auto;
+  text-align: center;
+  box-shadow: 20px 15px 15px black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(12, 4, 124);
+  border-radius: 14px;
+}
+
+.box1 {
+  background: #159e5e;
+}
+
+.box2 {
+  background: #159e5e;
+}
+
+.box3 {
+  background: #159e5e;
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 600px) {
+  .box1, .box2, .box3 {
+    width: 48%; /* Adjust the width as needed for two boxes in a row */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .box1, .box2, .box3 {
+    width: 30%; /* Adjust the width as needed for three boxes in a row */
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .box1, .box2, .box3 {
+    width: 20%; /* Adjust the width as needed for five boxes in a row */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box1, .box2, .box3 {
+    width: 20%; /* Adjust the width as needed for five boxes in a row */
+  }
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 600px) {
+  .box1, .box2, .box3 {
+    width: 30%;
+    font-size: 1px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .box1, .box2, .box3 {
+    width: 20%;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .box1, .box2, .box3 {
+    width: 20%;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box1, .box2, .box3 {
+    width: 20%;
+    font-size: 18px;
+  }
+}
+
+.container2 button {
+
+
+  background-color:#014224;
+  box-shadow: 10px 5px 5px black;
+  border: none;
+  color: rgb(241, 225, 201);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: 40%;
+
+}
+
+.about_container {
+  /*width: 100%;*/
+
+  height: 1500px;
+  display: block;
+  background: rgb(138, 243, 208);
+  margin-top: -8%;
+}
+.about_container1 {
+ /* width: 100%;*/
+  text-align: center;
+  height: 200px;
+  background:rgb(138, 243, 208);
+  margin-top: 8%;
+  text-align: center;
+  color: rgb(6, 2, 68);
+  float: left;
+  margin-left: 20%;
+
+  
+}
+.about_container1 h1{
+  font-size: 25px;
+  font-family: serif;
+  text-align: end;
+  text-align: center;
+  
+}
+.about_container1 span{
+  font-family:'cursive';
+  font-weight: bold;
+  font-size: 50px;
+  color: #01351d;
+  
+}
+.about_container1 h2{
+  color:#01351d;
+}
+
+
+
+.about_container2 {
+  width: 100%;
+  height: 1800px;
+  background: #eeddf7;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  float: right;
+  
+
+}
+@media only screen and (max-width: 600px) {
+  .about_container1{
+   
+    font-size: 12px;
+  }
+  .about_container2 {
+    margin-left: 0;
+    height: 1050px;
+    font-size: 20px;
+  }
+}
+
+.item{
+  width: 300px;
+  height: 200px;
+  margin-top: 10%;
+  margin-left: 60px;
+  margin-right: 40px;
+  box-shadow: 10px 5px 5px black;
+ 
+  background:#014224;
+}
+
+#sidebar {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+   top: 0;
+  left: -250px;
+  background-color: #014224;
+  transition: 0.5s;
+  padding-top: 0;
+  margin-top: 47px;
+}
+
+#sidebar a {
+  padding: 25px;
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(241, 225, 201);
+  display: block;
+  transition: 0.3s;
+}
+
+#sidebar a:hover {
+  color: rgb(248, 183, 84);
+}
+
+#main-content {
+  transition: margin-left 0.5s;
+  padding: 2px;
+  
+  
+}
+
+#openBtn {
+  font-size: 15px;
+  cursor: pointer;
+  background-color:#014224;
+  color: rgb(241, 225, 201);
+  border: none;
+  padding: 5px;
+  margin: 0;
+  margin-top: 4%;
+  width: 60px;
+  height: 40px;
+}
+
+
+#openBtn:hover {
+  color: rgb(245, 182, 87);
+}
+
+
+@media only screen and (max-width: 768px) {
+  #sidebar {
+    left: 0;
+    
+  }
+
+  #main-content {
+    margin-left: 150px;
+    padding: 58px;
+    height: 40px;
+    font-size: 9px;
+  
+  }
+
+  #sidebar a {
+    padding: 30px; /* Adjusted padding for even smaller screens */
+    font-size: 10px; /* Adjusted font size for even smaller screens */
+  }
+  #openBtn {
+    font-size: 15px;
+  
+  padding: 1%;
+  
+  margin-top: 20%;
+  margin-left: -60px;
+  width: 40px;
+  height: 40px;
+    
+  }
+}
+
+.cube {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d;
+  transform: rotateX(45deg) rotateY(45deg);
+  animation: rotateCube 5s infinite linear;
+}
+.cube img{
+
+  width: 100%;
+  height: 100%;
+}
+.deco{
+  display: flex;
+  width: 100%;
+  height: 350px;
+  border: 20px solid rgb(167, 124, 7)k;
+  margin-top: -20%;
+  padding: 0;
+  border-bottom-left-radius: 1%;
+  border-bottom-right-radius: 99%;
+  background-color:#159e5e;
+ 
+
+}
+.circle{
+  width: 300px;
+  height: 300px;
+  background-color: #159e5e;
+  border-radius: 100%;
+  margin-top: -10%;
+  margin-left: -10%;
+
+}
+
+.circle1{
+  width: 200px;
+            height: 100px;
+  background-color:#159e5e;
+   /* Change the background color as needed */
+            border-radius: 100px 100px 0 0; /* Border radius to create a semi-circle */
+            overflow: hidden; 
+  margin-top: -30%;
+  margin-left: 90%;
+  rotate: -90deg;
+
+}
+.circle2{
+  width: 300px;
+  height: 300px;
+  background-color: #159e5e;
+  border-radius: 100%;
+  margin-top: -25%;
+}@media screen and (max-width: 768px) {
+  .circle, .circle1, .circle2 {
+    width: 0px;
+    height: 0px;
+  }
+
+  
+}
+@media screen and (max-width: 768px) {
+  .circle, .circle1, .circle2 {
+    width: 0px;
+    height: 0px;
+  }}
+  @media screen and (max-width: 1200px) {
+    .circle, .circle1, .circle2 {
+      width: 0px;
+      height: 0px;
+    }
+
+  
+}
+  
+
+
+
+.floatbox1{
+  width: 80%;
+  height: 300px;
+  margin-left: 10%;
+  display: flex;
+  margin-left: 10%;
+  color: rgb(12,4,124);
+
+}
+@media screen and (max-width: 600px) {
+  .floatbox1 {
+    flex-direction: column; /* Change to a column layout on smaller screens */
+    align-items: center; /* Center items when in a column layout */
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 778px) {
+  .floatbox1 {
+    padding: 10%;
+    width: 50%; /* Adjust the width as needed for medium-sized screens */
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .floatbox1 {
+    width: 50%; /* Adjust the width as needed for larger screens */
+  }
+}
+
+
+
+.deco H1{
+font-family: cursive;
+font-weight: 600;
+color: white;
+}
+
+
+
+.footer {
+  
+  display: flex;
+  justify-content: space-around;
+  background-color:#014224;
+  color: rgb(241, 233, 176);
+  padding: 20px;
+}
+
+.footer-item {
+  text-align: left;
+}
+
+.footer-item h3 {
+  border-bottom: 2px solid rgb(241, 233, 176);
+  padding-bottom: 8px;
+}
+
+input[type="email"] {
+  width: 80%;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+button {
+  padding: 8px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(135, 17, 182);
+}
+@media screen and (min-width: 992px) {
+  .footer-item {
+    flex: 0 0 20%;
+    
+  }.footer{
+    font-size: 18px;
+  }
+
+  input[type="email"] {
+    width: 20%;
+  }
+
+  button {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 660px) {
+  .footer-item {
+    flex: 0 0 20%;
+    
+  }.footer{
+    font-size: 8px;
+  }
+
+  input[type="email"] {
+    width: 20%;
+  }
+
+  button {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer-item {
+    flex: 0 0 20%;
+    
+  }
+  .footer{
+    font-size: 8px;
+    height: 120px;
+  }
+
+  input[type="email"] {
+    width: 20%;
+  }
+
+  button {
+    width: 20%;
+  }
+}

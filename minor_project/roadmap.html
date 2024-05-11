@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Website Layout | CodingLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="language .html">
+    <link rel="stylesheet" href="lag.css">
+
+<style>
+    .rocks{
+            width: 100%;
+            height: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;;
+            justify-content: center;
+            padding: 5%;
+            background: rgb(29, 0, 44);
+        }
+.box {
+    width: 300px;
+    height: 100px;
+    background-color: rgb(58, 10, 82);
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    color: rgb(255, 166, 0);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}.beautiful-button {
+            display: inline-block;
+            padding: 10px 24px;
+            font-size: 7px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            color: rgb(162, 116, 185);
+            background-color: rgb(97, 8, 141);
+            
+        }
+
+        .beautiful-button:hover {
+            background-color: #7329b9;
+            border: 2px solid #163549;
+        }
+        #boxru{
+            width: 90%;
+        }
+        .gojo{
+            width: 80%;
+            height: 40px;
+            
+        }
+        </style>
+
+
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">Compute_Point</a>
+            </div>
+            <ul>
+                <li><a href="demo.html">Home</a></li>
+        <li><a href="about .html">About</a></li>
+        <li><a href="fresher.html">fresher</a></li>
+        <li><a href="rgpc.html">Exam</a></li>
+        
+            </ul>
+        </div>
+    </nav>
+
+
+    </div>
+
+    <div class="rocks"> 
+        <div class="box" id="boxru"><box class="gojo"><h1>Choose your domain bro</h1></box></div>
+        <div class="box"><br>frontend developer <br><a href="sage1.html"><button class="beautiful-button ">more</button></a></div>
+        <div class="box"><br>python / java developer<br><a href="sage2.html"><button class="beautiful-button ">more</button></a></div>
+        <div class="box"> <br>Android developer 
+            <br><a href="sage3.html"><button class="beautiful-button ">more</button></a></div>
+        <div class="box"><br>backend developer <br><a href="sage4.html"><button class="beautiful-button ">more</button></a></div>
+        <div class="box"><br>app developer<br><a href="sage5.html"><button class="beautiful-button ">more</button></a></div>
+        
+        <div class="box"><br>Game Developer: <br><a href="sage6.html"><button class="beautiful-button ">more</button></a></div>
+        <div class="box"><br>UI/UX Designer <br><a href="sage7.html"><button class="beautiful-button ">more</button></a></div>
+       
+        </div>
+    <div class="footer">
+        <div class="footer-item">
+            <h3>Contact Us</h3>
+            <br>
+            <p>poornimabundela7@gmail.com</p>
+
+            <p>Phone: 7879001703</p>
+        </div>
+        <div class="footer-item">
+            <h3>Follow Us</h3>
+            <br>
+            <p>Instagram Id:</p>
+            <p>poornimabundela9</p>
+        </div>
+        <div class="footer-item">
+            <h3>More information </h3><br>
+            <p>Linkedlin profile: </p>
+            <p>github: </p>
+
+        </div>
+    </div>
+    <!-- Repeat the pattern for boxes 3-6 -->
+    <script>
+        document.querySelectorAll('.expandable-box').forEach(box => {
+            box.addEventListener('click', () => {
+                box.classList.toggle('expanded');
+
+                // Close other expanded boxes
+                document.querySelectorAll('.expandable-box.expanded')
+                    .forEach(otherBox => {
+                        if (otherBox !== box) {
+                            otherBox.classList.remove('expanded');
+                        }
+                    });
+            });
+        });</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
+
+<!-- Code injected
